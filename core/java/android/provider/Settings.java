@@ -3125,6 +3125,12 @@ public final class Settings {
         public static final String HEADS_UP_NOTIFICATION_SNOOZE = "heads_up_notification_snooze";
 
         /**
+         * Display second in the Clock
+         * @hide
+         */
+        public static final String CLOCK_USE_SECOND = "clock_use_second";
+
+        /**
          * Visibility of SIM icons of unpopulated SIM slots in MSIM mode
          * 0: Hide unpopulated SIM icons
          * 1: Show unpopulated SIM icons
