@@ -3133,6 +3133,12 @@ public final class Settings {
         public static final String STATUS_BAR_MSIM_SHOW_EMPTY_ICONS = "status_bar_show_empty_sims";
 
         /**
+         * Status bar battery %
+         * @hide
+         */
+        public static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
+
+        /**
          * Locale for secondary overlay on dialer for t9 search input
          * @hide
          */
@@ -3333,7 +3339,8 @@ public final class Settings {
             DISPLAY_TEMPERATURE_DAY,
             DISPLAY_TEMPERATURE_MODE,
             DISPLAY_AUTO_OUTDOOR_MODE,
-            LIVE_DISPLAY_HINTED
+            LIVE_DISPLAY_HINTED,
+            STATUS_BAR_SHOW_BATTERY_PERCENT
         };
 
         /**
