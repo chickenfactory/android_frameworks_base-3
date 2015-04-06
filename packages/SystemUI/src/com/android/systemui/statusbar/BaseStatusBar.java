@@ -2133,7 +2133,7 @@ public abstract class BaseStatusBar extends SystemUI implements
                 && !keyguard.isShowingAndNotOccluded()
                 && !keyguard.isInputRestricted()
                 && !zenBlocksHeadsUp
-                && !isImeShowing();
+                && !isImeShowing()
                 && (!mStatusBarKeyguardViewManager.isShowing()
                         || mStatusBarKeyguardViewManager.isOccluded())
                 && !mStatusBarKeyguardViewManager.isInputRestricted();
