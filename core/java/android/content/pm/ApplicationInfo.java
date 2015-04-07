@@ -589,7 +589,6 @@ public class ApplicationInfo extends PackageItemInfo implements Parcelable {
 
     /**
      * True when the application's rendering should be hardware accelerated.
-     * @hide
      */
     public boolean hardwareAccelerated;
 
