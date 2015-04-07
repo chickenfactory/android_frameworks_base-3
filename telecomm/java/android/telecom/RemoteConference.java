@@ -138,7 +138,7 @@ public final class RemoteConference {
         }
     }
 
-    /** {@hide} */
+    /** @hide */
     void setCallProperties(int properties) {
         if (mCallProperties != properties) {
             mCallProperties = properties;
@@ -185,6 +185,7 @@ public final class RemoteConference {
         return mConnectionCapabilities;
     }
 
+    /** @hide */
     public final int getCallProperties() {
         return mCallProperties;
     }
