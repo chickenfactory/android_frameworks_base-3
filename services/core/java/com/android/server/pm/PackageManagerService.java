@@ -6577,23 +6577,10 @@ public class PackageManagerService extends IPackageManager.Stub {
                 adjustedAbi =  scannedPackage.applicationInfo.primaryCpuAbi;
             }
 
-            File dataDir = Environment.getDataDirectory();
-            long lowThreshold = StorageManager.from(mContext).getStorageLowBytes(dataDir);
-            if (lowThreshold == 0) {
-                Log.w(TAG, "Invalid low memory threshold");
-                return;
-            }
-
             for (PackageSetting ps : packagesForUser) {
                 if (scannedPackage == null || !scannedPackage.packageName.equals(ps.name)) {
                     if (ps.primaryCpuAbiString != null) {
                         continue;
-                    }
-
-                    long usableSpace = dataDir.getUsableSpace();
-                    if (usableSpace < lowThreshold) {
-                        Log.w(TAG, "Not running dexopt on remaining apps due to low memory: " + usableSpace);
-                        break;
                     }
 
                     ps.primaryCpuAbiString = adjustedAbi;
