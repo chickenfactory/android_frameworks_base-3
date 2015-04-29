@@ -105,4 +105,8 @@
 
   <!-- Proximity check on screen on default -->
   <java-symbol type="bool" name="config_proximityCheckOnWakeEnabledByDefault" />
+
+  <!-- Custom styles for dialog themes -->
+  <java-symbol type="style" name="Theme.Material.Trds.Dialog" />
+  <java-symbol type="style" name="Theme.Material.Trds.Dialog.Alert" />
 </resources>
