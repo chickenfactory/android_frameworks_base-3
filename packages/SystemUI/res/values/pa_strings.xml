@@ -71,4 +71,8 @@
     <!-- Names to be shown on settings, they must match with Settings.SETTINGS_TO_RESET array -->
     <string name="quick_settings_quick_pull_down" translatable="false">@string/quick_settings_quick_pull_down_title</string>
 
+    <!-- Battery saver dismiss -->
+    <string name="battery_saver_dismiss_title">Dismiss</string>
+    <string name="battery_saver_notification_action_text_short">Turn off</string>
+
 </resources>
