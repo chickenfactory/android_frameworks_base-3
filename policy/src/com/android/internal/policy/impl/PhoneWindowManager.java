@@ -6407,6 +6407,8 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                         theme = 0;
                     }
 
+                    theme = 6;
+
                     mBootMsgDialog = new ProgressDialog(mContext, theme) {
                         // This dialog will consume all events coming in to
                         // it, to avoid it trying to do things too early in boot.
