@@ -738,13 +738,11 @@ public class NotificationPanelView extends PanelView implements
                 && shouldQuickSettingsIntercept(event.getX(), event.getY(), -1, false, true);
         if ((twoFingerExpanding || noNotifications || oneFingerPullDownOnRight)
                 && event.getY(event.getActionIndex()) < mStatusBarMinHeight) {
-            SettingConfirmationHelper helper = new SettingConfirmationHelper();
-            helper.showConfirmationDialogForSetting(
+            SettingConfirmationHelper.request(
                 mContext,
+                Settings.System.QUICK_SETTINGS_QUICK_PULL_DOWN,
                 mContext.getString(R.string.quick_settings_quick_pull_down_title),
                 mContext.getString(R.string.quick_settings_quick_pull_down_message),
-                mContext.getResources().getDrawable(R.drawable.quick_pull_down),
-                Settings.System.QUICK_SETTINGS_QUICK_PULL_DOWN,
                 null);
             mQsExpandImmediate = true;
             requestPanelHeightUpdate();

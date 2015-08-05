@@ -68,4 +68,7 @@
     <!-- Screen pinning dialog description (for devices without navbar) -->
     <string name="screen_pinning_description_no_navbar">This keeps it in view until you unpin. Touch and hold the Back button to unpin.</string>
 
+    <!-- Names to be shown on settings, they must match with Settings.SETTINGS_TO_RESET array -->
+    <string name="quick_settings_quick_pull_down" translatable="false">@string/quick_settings_quick_pull_down_title</string>
+
 </resources>
