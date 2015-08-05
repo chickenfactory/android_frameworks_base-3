@@ -47,6 +47,10 @@
     <string name="setting_confirmation_just_once">Just once</string>
     <string name="setting_confirmation_never">Never</string>
 
+    <!-- Immersive Mode Confirmation Dialog -->
+    <string name="immersive_mode_confirmation_title">Immersive Mode Confirmation</string>
+    <string name="immersive_mode_confirmation_message">Would you like to enable the immersive mode confirmation dialog?</string>
+
     <!-- [CHAR LIMIT=NONE] Message shown in dialog on first boot after clean install for each .apk that is optimized. -->
     <string name="android_installing_apk">Installing app
         <xliff:g id="number" example="123">%1$d</xliff:g> of
@@ -58,7 +62,7 @@
     <string name="permlab_preventpower">override power key</string>
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permdesc_preventpower">Allows an app to override the power key.</string>
-    
+
     <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permlab_accessTorchService">access torch service</string>
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
