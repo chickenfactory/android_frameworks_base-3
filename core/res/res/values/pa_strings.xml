@@ -51,6 +51,10 @@
     <string name="immersive_mode_confirmation_title">Immersive Mode Confirmation</string>
     <string name="immersive_mode_confirmation_message">Would you like to enable the immersive mode confirmation dialog?</string>
 
+    <!-- Safe Headset Volume Dialog -->
+    <string name="safe_headset_warning_title">Safe Headset Volume</string>
+    <string name="safe_headset_warning_message">Would you like to disable the recommended volume level warning ?</string>
+
     <!-- [CHAR LIMIT=NONE] Message shown in dialog on first boot after clean install for each .apk that is optimized. -->
     <string name="android_installing_apk">Installing app
         <xliff:g id="number" example="123">%1$d</xliff:g> of

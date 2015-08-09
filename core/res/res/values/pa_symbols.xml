@@ -43,7 +43,7 @@
   <java-symbol type="string" name="reboot_title" />
   <java-symbol type="string" name="reboot_recovery" />
   <java-symbol type="string" name="reboot_bootloader" />
-  <java-symbol type="string" name="reboot_confirm" /> 
+  <java-symbol type="string" name="reboot_confirm" />
   <java-symbol type="string" name="reboot_progress" />
 
   <!-- OnTheSpot settings confirmation dialog -->
@@ -54,6 +54,10 @@
   <!-- Immersive mode confirmation dialog -->
   <java-symbol type="string" name="immersive_mode_confirmation_title" />
   <java-symbol type="string" name="immersive_mode_confirmation_message" />
+
+  <!-- Safe headset volume warning dialog -->
+  <java-symbol type="string" name="safe_headset_warning_title" />
+  <java-symbol type="string" name="safe_headset_warning_message" />
 
   <!-- First boot install dialog -->
   <java-symbol type="string" name="android_installing_apk" />

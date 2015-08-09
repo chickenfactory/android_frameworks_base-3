@@ -3279,11 +3279,17 @@ public final class Settings {
          */
         public static final String QUICK_SETTINGS_QUICK_PULL_DOWN = "quick_settings_quick_pull_down";
 
-       /**
-        * Disable Immersive Message
-        * @hide
-        */
+        /**
+         * Disable Immersive Message
+         * @hide
+         */
         public static final String DISABLE_IMMERSIVE_MESSAGE = "disable_immersive_message";
+
+        /**
+         * Safe Headset Volume disabler option
+         * @hide
+         */
+        public static final String SAFE_HEADSET_VOLUME = "safe_headset_volume";
 
         /**
          * Settings to backup. This is here so that it's in the same place as the settings
@@ -3394,7 +3400,8 @@ public final class Settings {
          */
         public static final String[] SETTINGS_TO_RESET = {
             QUICK_SETTINGS_QUICK_PULL_DOWN,
-            DISABLE_IMMERSIVE_MESSAGE
+            DISABLE_IMMERSIVE_MESSAGE,
+            SAFE_HEADSET_VOLUME
         };
 
         // Settings moved to Settings.Secure

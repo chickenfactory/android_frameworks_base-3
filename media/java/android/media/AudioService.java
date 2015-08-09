@@ -1041,6 +1041,7 @@ public class AudioService extends IAudioService.Stub {
 
             updateRingerModeAffectedStreams();
             readDockAudioSettings(cr);
+            updateManualSafeMediaVolume();
         }
 
         mMuteAffectedStreams = System.getIntForUser(cr,
@@ -4631,6 +4632,8 @@ public class AudioService extends IAudioService.Stub {
                 Settings.Global.DOCK_AUDIO_MEDIA_ENABLED), false, this);
      	    mContentResolver.registerContentObserver(Settings.System.getUriFor(
                 Settings.System.VOLUME_LINK_NOTIFICATION), false, this);
+            mContentResolver.registerContentObserver(Settings.System.getUriFor(
+                Settings.System.SAFE_HEADSET_VOLUME), false, this);
         }
 
         @Override
@@ -4649,6 +4652,7 @@ public class AudioService extends IAudioService.Stub {
                     setRingerModeInt(getRingerModeInternal(), false);
                 }
                 readDockAudioSettings(mContentResolver);
+                updateManualSafeMediaVolume();
             }
 
                 boolean linkNotificationWithVolume = Settings.System.getInt(mContentResolver,
@@ -4658,7 +4662,6 @@ public class AudioService extends IAudioService.Stub {
                     createStreamStates();
                     updateStreamVolumeAlias(true);
                 }
-		
         }
     }
 
@@ -4926,14 +4929,18 @@ public class AudioService extends IAudioService.Stub {
             connType = AudioRoutesInfo.MAIN_HEADSET;
             intent.setAction(Intent.ACTION_HEADSET_PLUG);
             intent.putExtra("microphone", 1);
-            startMusicPlayer();
+            if (state == 1) {
+                startMusicPlayer();
+            }
         } else if (device == AudioSystem.DEVICE_OUT_WIRED_HEADPHONE ||
                    device == AudioSystem.DEVICE_OUT_LINE) {
             /*do apps care about line-out vs headphones?*/
             connType = AudioRoutesInfo.MAIN_HEADPHONES;
             intent.setAction(Intent.ACTION_HEADSET_PLUG);
             intent.putExtra("microphone", 0);
-            startMusicPlayer();
+            if (state == 1) {
+                startMusicPlayer();
+            }
         } else if (device == AudioSystem.DEVICE_OUT_ANLG_DOCK_HEADSET) {
             connType = AudioRoutesInfo.MAIN_DOCK_SPEAKERS;
             intent.setAction(AudioManager.ACTION_ANALOG_AUDIO_DOCK_PLUG);
@@ -5568,6 +5575,9 @@ public class AudioService extends IAudioService.Stub {
     // mSafeMediaVolumeDevices lists the devices for which safe media volume is enforced,
     private final int mSafeMediaVolumeDevices = AudioSystem.DEVICE_OUT_WIRED_HEADSET |
                                                 AudioSystem.DEVICE_OUT_WIRED_HEADPHONE;
+
+    // mManualSafeMediaVolume overrides the built-in safe media volume
+    private boolean mManualSafeMediaVolume;
     // mMusicActiveMs is the cumulative time of music activity since safe volume was disabled.
     // When this time reaches UNSAFE_VOLUME_MUSIC_ACTIVE_MS_MAX, the safe media volume is re-enabled
     // automatically. mMusicActiveMs is rounded to a multiple of MUSIC_ACTIVE_POLL_PERIOD_MS.
@@ -5600,6 +5610,11 @@ public class AudioService extends IAudioService.Stub {
     }
 
     private void enforceSafeMediaVolume() {
+        // return if safe volume has been manually turned off
+        if (!mManualSafeMediaVolume) {
+            return;
+        }
+
         VolumeStreamState streamState = mStreamStates[AudioSystem.STREAM_MUSIC];
         int devices = mSafeMediaVolumeDevices;
         int i = 0;
@@ -5629,7 +5644,7 @@ public class AudioService extends IAudioService.Stub {
             if ((mSafeMediaVolumeState == SAFE_MEDIA_VOLUME_ACTIVE) &&
                     (mStreamVolumeAlias[streamType] == AudioSystem.STREAM_MUSIC) &&
                     ((device & mSafeMediaVolumeDevices) != 0) &&
-                    (index > mSafeMediaVolumeIndex)) {
+                    (index > mSafeMediaVolumeIndex) && mManualSafeMediaVolume) {
                 return false;
             }
             return true;
@@ -5831,6 +5846,13 @@ public class AudioService extends IAudioService.Stub {
         if (status != 0) {
             Log.w(TAG, "AudioFlinger informed of device's low RAM attribute; status " + status);
         }
+    }
+
+    private void updateManualSafeMediaVolume() {
+        int safeMediaVolumeEnable = Settings.System.getIntForUser(mContext.getContentResolver(),
+                Settings.System.SAFE_HEADSET_VOLUME, 0, UserHandle.USER_CURRENT);
+        mManualSafeMediaVolume = (safeMediaVolumeEnable !=1);
+        setSafeMediaVolumeEnabled(mManualSafeMediaVolume);
     }
 
     private void enforceSelfOrSystemUI(String action) {
