@@ -19,39 +19,35 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="global_action_screenshot">Screenshot</string>
-  <string name="global_action_reboot">Reboot</string>
-  <string name="reboot_progress">Rebooting\u2026</string>
-  <string name="reboot_title">Reboot</string>
-  <string name="reboot_confirm" product="tablet">Your tablet will reboot.</string>
-  <string name="reboot_confirm" product="default">Your phone will reboot.</string>
-  <string name="reboot">Reboot</string>
+  <string name="global_action_screenshot">Captură de ecran</string>
+  <string name="global_action_reboot">Repornire sistem</string>
+  <string name="reboot_progress">Repornind\u2026</string>
+  <string name="reboot_title">Repornire sistem</string>
+  <string name="reboot_confirm" product="tablet">Tableta va reporni.</string>
+  <string name="reboot_confirm" product="default">Telefonul va reporni.</string>
+  <string name="reboot">Repornire sistem</string>
   <string name="reboot_recovery">Recovery</string>
   <string name="reboot_bootloader">Bootloader</string>
   <string name="reboot_download">Download</string>
   <string name="permlab_setKeyguardWallpaper">set keyguard wallpaper</string>
-  <string name="permdesc_setKeyguardWallpaper">Allows an app to change the lock screen wallpaper.</string>
-  <string name="setting_confirmation_ask_me_later">Ask later</string>
-  <string name="setting_confirmation_yes">Yes</string>
-  <string name="setting_confirmation_no">No</string>
-  <string name="android_installing_apk">Installing app
-        <xliff:g id="number" example="123">%1$d</xliff:g> of
-        <xliff:g id="number" example="123">%2$d</xliff:g>.</string>
-  <string name="android_installing_title">Android is installing\u2026</string>
-  <string name="permlab_preventpower">override power key</string>
-  <string name="permdesc_preventpower">Allows an app to override the power key.</string>
-  <string name="permlab_accessTorchService">access torch service</string>
-  <string name="permdesc_accessTorchService">Allows an app to access the torch service. Should never be needed for normal apps.</string>
-  <string name="quick_settings_tile_flashlight_not_title">Flashlight is on</string>
-  <string name="quick_settings_tile_flashlight_not_summary">Tap to turn off</string>
-  <string name="permlab_accessThemeService">access theme service</string>
-  <string name="permdesc_accessThemeService">Allows an app to access the theme service. Should never be needed for normal apps.</string>
-  <string name="permlab_readThemes">read your theme info</string>
-  <string name="permdesc_readThemesDesc">Allows the app to read your themes and
-       determine which theme you have applied.</string>
-  <string name="permlab_writeThemes">modify your themes</string>
-  <string name="permdesc_writeThemesDesc">Allows the app to insert new themes and
-       modify which theme you have applied.</string>
+  <string name="permdesc_setKeyguardWallpaper">Permite unei aplicații să schimbe imaginea de fundal a ecranului  de blocare.</string>
+  <string name="setting_confirmation_always">Always</string>
+  <string name="setting_confirmation_just_once">Just once</string>
+  <string name="setting_confirmation_never">Never</string>
+  <string name="android_installing_apk">Se instalează aplicaţia <xliff:g id="number" example="123">%1$d </xliff:g> din <xliff:g id="number" example="123">%2$d </xliff:g>.</string>
+  <string name="android_installing_title">Android instalează\u2026</string>
+  <string name="permlab_preventpower">suprascrie butonul de pornire</string>
+  <string name="permdesc_preventpower">Permite aplicației să suprascrie tasta de pornire.</string>
+  <string name="permlab_accessTorchService">accesează serviciul lanternă</string>
+  <string name="permdesc_accessTorchService">Permite unei aplicații să acceseze serviciul lanternă. Aplicațiile normale nu au nevoie.</string>
+  <string name="quick_settings_tile_flashlight_not_title">Lanterna este pornită</string>
+  <string name="quick_settings_tile_flashlight_not_summary">Atingeţi pentru a dezactiva</string>
+  <string name="permlab_accessThemeService">accesare serviciul pentru teme</string>
+  <string name="permdesc_accessThemeService">Permite unei aplicații să acceseze serviciul pentru teme. Aplicațiile normale nu au nevoie.</string>
+  <string name="permlab_readThemes">citește informații temă dumneavoastră</string>
+  <string name="permdesc_readThemesDesc">Permite aplicației să citească temele dumneavoastră și să determine pe care ați aplicat-o.</string>
+  <string name="permlab_writeThemes">modifică teme dumneavoastră</string>
+  <string name="permdesc_writeThemesDesc">Permite aplicației să adauge teme noi și să le modifice pe cele aplicate.</string>
   <string name="theme_install_error_title">Failed to install theme</string>
   <string name="theme_install_error_message">%s failed to install</string>
   <string name="theme_reset_notification_title">Theme reset</string>

@@ -31,9 +31,9 @@
   <string name="reboot_download">Download</string>
   <string name="permlab_setKeyguardWallpaper">set keyguard wallpaper</string>
   <string name="permdesc_setKeyguardWallpaper">Allows an app to change the lock screen wallpaper.</string>
-  <string name="setting_confirmation_ask_me_later">Ask later</string>
-  <string name="setting_confirmation_yes">Yes</string>
-  <string name="setting_confirmation_no">No</string>
+  <string name="setting_confirmation_always">Always</string>
+  <string name="setting_confirmation_just_once">Just once</string>
+  <string name="setting_confirmation_never">Never</string>
   <string name="android_installing_apk">Installing app
         <xliff:g id="number" example="123">%1$d</xliff:g> of
         <xliff:g id="number" example="123">%2$d</xliff:g>.</string>

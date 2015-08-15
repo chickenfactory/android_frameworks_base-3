@@ -36,6 +36,8 @@
   <string name="quick_settings_location_detail_mode_high_accuracy_description">Utilizza GPS, WiFi e rete cellulare per determinare la posizione </string>
   <string name="quick_settings_location_detail_mode_battery_saving_description">Usa WiFi e rete cellulare per determinare la posizione</string>
   <string name="quick_settings_location_detail_mode_sensors_only_description">Usa GPS per determinare la posizione</string>
+  <string name="quick_settings_quick_pull_down_title">Quick pull down</string>
+  <string name="quick_settings_quick_pull_down_message">Would you like the edge of the status bar to pull down quick settings?</string>
   <string name="heads_up_snooze_message">Heads up disabilitato per <xliff:g id="number">%d</xliff:g> minuti.</string>
   <string name="screen_pinning_description_no_navbar">Questa schermata rimarrà in vista finche non la sbloccherai. Tocca e tieni premuto il pulsante indietro per sbloccare.</string>
 </resources>

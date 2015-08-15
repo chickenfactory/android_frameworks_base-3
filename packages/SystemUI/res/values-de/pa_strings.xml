@@ -36,6 +36,8 @@
   <string name="quick_settings_location_detail_mode_high_accuracy_description">GPS, Wi\u2011Fi- und Mobilfunknetze zur Standortbestimmung verwenden </string>
   <string name="quick_settings_location_detail_mode_battery_saving_description">Wi\u2011Fi- und Mobilfunknetze zur Standortbestimmung verwenden</string>
   <string name="quick_settings_location_detail_mode_sensors_only_description">GPS zur Standortbestimmung verwenden</string>
+  <string name="quick_settings_quick_pull_down_title">Quick pull down</string>
+  <string name="quick_settings_quick_pull_down_message">Would you like the edge of the status bar to pull down quick settings?</string>
   <string name="heads_up_snooze_message">Heads-Up ist für <xliff:g id="number">%d</xliff:g> Minuten deaktiviert.</string>
   <string name="screen_pinning_description_no_navbar">Das wird so lange angezeigt, bis du es unpinnst. Berühre es und halte den Zurücknopf zum unpinnen.</string>
 </resources>

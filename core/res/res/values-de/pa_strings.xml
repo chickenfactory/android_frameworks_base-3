@@ -19,55 +19,51 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="global_action_screenshot">Screenshot</string>
-  <string name="global_action_reboot">Reboot</string>
-  <string name="reboot_progress">Rebooting\u2026</string>
-  <string name="reboot_title">Reboot</string>
-  <string name="reboot_confirm" product="tablet">Your tablet will reboot.</string>
-  <string name="reboot_confirm" product="default">Your phone will reboot.</string>
-  <string name="reboot">Reboot</string>
-  <string name="reboot_recovery">Recovery</string>
+  <string name="global_action_screenshot">Bildschimfoto</string>
+  <string name="global_action_reboot">Neustart</string>
+  <string name="reboot_progress">Gerät wird neu gestartet\u2026</string>
+  <string name="reboot_title">Neustart</string>
+  <string name="reboot_confirm" product="tablet">Tablet wird neu gestartet.</string>
+  <string name="reboot_confirm" product="default">Telefon wird neu gestartet.</string>
+  <string name="reboot">Neustart</string>
+  <string name="reboot_recovery">Wiederherstellung</string>
   <string name="reboot_bootloader">Bootloader</string>
-  <string name="reboot_download">Download</string>
-  <string name="permlab_setKeyguardWallpaper">set keyguard wallpaper</string>
-  <string name="permdesc_setKeyguardWallpaper">Allows an app to change the lock screen wallpaper.</string>
-  <string name="setting_confirmation_ask_me_later">Ask later</string>
-  <string name="setting_confirmation_yes">Yes</string>
-  <string name="setting_confirmation_no">No</string>
-  <string name="android_installing_apk">Installing app
-        <xliff:g id="number" example="123">%1$d</xliff:g> of
-        <xliff:g id="number" example="123">%2$d</xliff:g>.</string>
-  <string name="android_installing_title">Android is installing\u2026</string>
-  <string name="permlab_preventpower">override power key</string>
-  <string name="permdesc_preventpower">Allows an app to override the power key.</string>
-  <string name="permlab_accessTorchService">access torch service</string>
-  <string name="permdesc_accessTorchService">Allows an app to access the torch service. Should never be needed for normal apps.</string>
-  <string name="quick_settings_tile_flashlight_not_title">Flashlight is on</string>
-  <string name="quick_settings_tile_flashlight_not_summary">Tap to turn off</string>
-  <string name="permlab_accessThemeService">access theme service</string>
-  <string name="permdesc_accessThemeService">Allows an app to access the theme service. Should never be needed for normal apps.</string>
-  <string name="permlab_readThemes">read your theme info</string>
-  <string name="permdesc_readThemesDesc">Allows the app to read your themes and
-       determine which theme you have applied.</string>
-  <string name="permlab_writeThemes">modify your themes</string>
-  <string name="permdesc_writeThemesDesc">Allows the app to insert new themes and
-       modify which theme you have applied.</string>
-  <string name="theme_install_error_title">Failed to install theme</string>
-  <string name="theme_install_error_message">%s failed to install</string>
-  <string name="theme_reset_notification_title">Theme reset</string>
-  <string name="theme_reset_notification_body">System theme restored due to multiple app crashes.</string>
-  <string name="lock_to_app_toast_no_navbar">To unpin this screen, touch and hold the Back button.</string>
-  <string name="permlab_useHardwareFramework">use hardware framework</string>
-  <string name="permdesc_useHardwareFramework">Allows an app access to the CM hardware framework.</string>
-  <string name="live_display_auto">Automatic</string>
-  <string name="live_display_auto_summary">Automatically adjust color temperature of screen after sunset and sunrise</string>
-  <string name="live_display_off">Off</string>
-  <string name="live_display_off_summary">Disable all adjustments</string>
-  <string name="live_display_day">Day</string>
-  <string name="live_display_day_summary">Use day settings only</string>
-  <string name="live_display_night">Night</string>
-  <string name="live_display_night_summary">Use night settings only</string>
-  <string name="live_display_outdoor">Outdoor (bright sun)</string>
-  <string name="live_display_outdoor_summary">Use outdoor settings only</string>
-  <string name="live_display_hint">LiveDisplay can help reduce eyestrain and help you sleep at night. Click here to try it out!</string>
+  <string name="reboot_download">Herunterladen</string>
+  <string name="permlab_setKeyguardWallpaper">Sperrbildschirm-Hintergrund setzen</string>
+  <string name="permdesc_setKeyguardWallpaper">Ermöglicht der App, den Hintergrund des Sperrbildschirms zu ändern.</string>
+  <string name="setting_confirmation_always">Always</string>
+  <string name="setting_confirmation_just_once">Just once</string>
+  <string name="setting_confirmation_never">Never</string>
+  <string name="android_installing_apk">Installiere App <xliff:g id="number" example="123">%1$d</xliff:g> von <xliff:g id="number" example="123">%2$d</xliff:g>.</string>
+  <string name="android_installing_title">Android wird installiert\u2026</string>
+  <string name="permlab_preventpower">Ein/Aus Taste ändern</string>
+  <string name="permdesc_preventpower">Ermöglicht der App, der Ein/Aus-Taste eine andere Funktion zuzuweisen.</string>
+  <string name="permlab_accessTorchService">Zugriff auf Taschenlampe</string>
+  <string name="permdesc_accessTorchService">Ermöglicht der App, auf die Taschenlampe zuzugreifen. Wird für normale Apps nicht benötigt.</string>
+  <string name="quick_settings_tile_flashlight_not_title">Taschenlampe ist an</string>
+  <string name="quick_settings_tile_flashlight_not_summary">Tippen zum Ausschalten</string>
+  <string name="permlab_accessThemeService">Zugriff auf den Themen-Dienst</string>
+  <string name="permdesc_accessThemeService">Ermöglicht einer App auf den Themen-Dienst zuzugreifen. Wird für normale Apps nicht benötigt.</string>
+  <string name="permlab_readThemes">Lesen der Theme-Information</string>
+  <string name="permdesc_readThemesDesc">Gestattet der App Ihre Themes auszulesen um das von Ihnen verwendete Theme zu erkennen.</string>
+  <string name="permlab_writeThemes">Ihre Themes verändern</string>
+  <string name="permdesc_writeThemesDesc">Ermöglicht der App, neue Themes zu installieren und das aktive Theme festzulegen.</string>
+  <string name="theme_install_error_title">Theme konnte nicht intalliert werden</string>
+  <string name="theme_install_error_message">%s konnte nicht installiert werden</string>
+  <string name="theme_reset_notification_title">Design zurücksetzen</string>
+  <string name="theme_reset_notification_body">Das Standard-Design wurde aufgrund mehrerer App Abstürze wiederhergestellt.</string>
+  <string name="lock_to_app_toast_no_navbar">Zum Lösen dieses Bildschirms, drücken und halten Sie den \"zurück\" Knopf.</string>
+  <string name="permlab_useHardwareFramework">Hardware-Framework verwenden</string>
+  <string name="permdesc_useHardwareFramework">Ermöglicht der App, auf das CM-Hardware-Framework zuzugreifen.</string>
+  <string name="live_display_auto">Automatisch</string>
+  <string name="live_display_auto_summary">Automatische Anpassung der Farbtemperatur des Bildschirms nach Sonnenauf- und -untergang</string>
+  <string name="live_display_off">Aus</string>
+  <string name="live_display_off_summary">Alle Anpassungen deaktivieren</string>
+  <string name="live_display_day">Tag</string>
+  <string name="live_display_day_summary">Nur Tageseinstellungen verwenden</string>
+  <string name="live_display_night">Nacht</string>
+  <string name="live_display_night_summary">Nur Nacheinstellungen verwenden</string>
+  <string name="live_display_outdoor">Draussen (Helle Sonne)</string>
+  <string name="live_display_outdoor_summary">Nur Outdoor Einstellungen verwenden</string>
+  <string name="live_display_hint">LiveDisplay entlastet Ihre Augen und lässt Sie nachts besser schlafen. Klicken Sie hier, um es auszuprobieren!</string>
 </resources>

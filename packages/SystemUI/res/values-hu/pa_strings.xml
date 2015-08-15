@@ -36,6 +36,8 @@
   <string name="quick_settings_location_detail_mode_high_accuracy_description">GPS, Wi\u2011Fi és mobilhálózatok segítségével határozza meg a helyet </string>
   <string name="quick_settings_location_detail_mode_battery_saving_description">Wi\u2011Fi és mobilhálózatok segítségével határozza meg a helyet</string>
   <string name="quick_settings_location_detail_mode_sensors_only_description">GPS segítségével határozza meg a helyet</string>
+  <string name="quick_settings_quick_pull_down_title">Quick pull down</string>
+  <string name="quick_settings_quick_pull_down_message">Would you like the edge of the status bar to pull down quick settings?</string>
   <string name="heads_up_snooze_message">Lebegő értesítés kikapcsolva <xliff:g id="number">%d</xliff:g> percre.</string>
   <string name="screen_pinning_description_no_navbar">Ez a nézetben tartja amíg a rögzítést  fel nem oldja. Érintse meg és nyomja hosszan a Vissza gombot a rögzítés feloldásához.</string>
 </resources>

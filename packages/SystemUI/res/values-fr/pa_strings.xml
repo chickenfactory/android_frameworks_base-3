@@ -36,6 +36,8 @@
   <string name="quick_settings_location_detail_mode_high_accuracy_description">Utiliser le GPS, le Wi-Fi et les réseaux cellulaires pour déterminer la position </string>
   <string name="quick_settings_location_detail_mode_battery_saving_description">Utiliser le Wi-Fi et les réseaux cellulaires pour déterminer la position</string>
   <string name="quick_settings_location_detail_mode_sensors_only_description">Utiliser le GPS pour déterminer la position</string>
+  <string name="quick_settings_quick_pull_down_title">Quick pull down</string>
+  <string name="quick_settings_quick_pull_down_message">Would you like the edge of the status bar to pull down quick settings?</string>
   <string name="heads_up_snooze_message">Les notifications flottantes sont désactivées pour <xliff:g id="number">%d</xliff:g> minutes.</string>
   <string name="screen_pinning_description_no_navbar">Garder épinglé jusqu\'à ce que vous le détachiez. Appuyer et maintenir le bouton retour pour détacher.</string>
 </resources>

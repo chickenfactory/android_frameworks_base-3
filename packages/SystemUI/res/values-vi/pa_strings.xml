@@ -18,24 +18,26 @@
  */
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="delete">Delete</string>
+  <string name="delete">Xóa</string>
   <string name="screenshot_delete_confirmation">Đã xóa ảnh chụp màn hình</string>
-  <string name="interruption_level_silent">Silent</string>
-  <string name="zen_silent_with_warning">No interruptions, except alarms.</string>
-  <string name="accessibility_quick_settings_location_battery_saving">Location reporting: battery saving mode.</string>
-  <string name="accessibility_quick_settings_location_gps_only">Location reporting: sensors only mode.</string>
-  <string name="accessibility_quick_settings_location_high_accuracy">Location reporting: high accuracy mode.</string>
-  <string name="quick_settings_location_battery_saving_label">Battery saving</string>
-  <string name="quick_settings_location_gps_only_label">GPS only</string>
-  <string name="quick_settings_location_high_accuracy_label">High accuracy</string>
-  <string name="quick_settings_location_detail_title">Location</string>
-  <string name="quick_settings_location_detail_menu_title">Select mode:</string>
-  <string name="quick_settings_location_detail_mode_high_accuracy_title">High accuracy</string>
-  <string name="quick_settings_location_detail_mode_battery_saving_title">Battery saving</string>
-  <string name="quick_settings_location_detail_mode_sensors_only_title">Device only</string>
-  <string name="quick_settings_location_detail_mode_high_accuracy_description">Use GPS, Wi\u2011Fi, and cellular networks to determine location </string>
-  <string name="quick_settings_location_detail_mode_battery_saving_description">Use Wi\u2011Fi and cellular networks to determine location</string>
-  <string name="quick_settings_location_detail_mode_sensors_only_description">Use GPS to determine your location</string>
-  <string name="heads_up_snooze_message">Heads up is disabled for <xliff:g id="number">%d</xliff:g> minutes.</string>
-  <string name="screen_pinning_description_no_navbar">This keeps it in view until you unpin. Touch and hold the Back button to unpin.</string>
+  <string name="interruption_level_silent">Im lặng</string>
+  <string name="zen_silent_with_warning">Không có gián đoạn, ngoại trừ máy báo thức.</string>
+  <string name="accessibility_quick_settings_location_battery_saving">Báo cáo vị trí: chế độ tiết kiệm pin.</string>
+  <string name="accessibility_quick_settings_location_gps_only">Báo cáo vị trí: chỉ các cảm biến.</string>
+  <string name="accessibility_quick_settings_location_high_accuracy">Báo cáo vị trí: chế độ chính xác cao.</string>
+  <string name="quick_settings_location_battery_saving_label">Tiết kiệm pin</string>
+  <string name="quick_settings_location_gps_only_label"> chỉ GPS</string>
+  <string name="quick_settings_location_high_accuracy_label">Độ chính xác cao</string>
+  <string name="quick_settings_location_detail_title">Địa điểm</string>
+  <string name="quick_settings_location_detail_menu_title">Chọn chế độ:</string>
+  <string name="quick_settings_location_detail_mode_high_accuracy_title">Độ chính xác cao</string>
+  <string name="quick_settings_location_detail_mode_battery_saving_title">Tiết kiệm pin</string>
+  <string name="quick_settings_location_detail_mode_sensors_only_title">Chỉ thiết bị</string>
+  <string name="quick_settings_location_detail_mode_high_accuracy_description">Sử dụng GPS, Wi\u2011Fi, và mạng di động để xác định vị trí </string>
+  <string name="quick_settings_location_detail_mode_battery_saving_description">Sử dụng GPS, Wi\u2011Fi, và mạng di động để xác định vị trí</string>
+  <string name="quick_settings_location_detail_mode_sensors_only_description">Sử dụng GPS để xác định vị trí của bạn</string>
+  <string name="quick_settings_quick_pull_down_title">Quick pull down</string>
+  <string name="quick_settings_quick_pull_down_message">Would you like the edge of the status bar to pull down quick settings?</string>
+  <string name="heads_up_snooze_message">Thông báo nhanh bị vô hiệu hóa  trong <xliff:g id="number">%d</xliff:g> phút.</string>
+  <string name="screen_pinning_description_no_navbar">Điều này sẽ giúp nó trong xem cho đến khi bạn bỏ ghim. Chạm và giữ lại để bỏ ghim.</string>
 </resources>
