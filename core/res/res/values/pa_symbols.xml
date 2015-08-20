@@ -99,4 +99,7 @@
   <java-symbol type="integer" name="config_dayColorTemperature" />
   <java-symbol type="integer" name="config_nightColorTemperature" />
   <java-symbol type="integer" name="config_outdoorAmbientLux" />
+
+  <!-- Non-themeable packages -->
+  <java-symbol type="array" name="non_themeable_packages" />
 </resources>
