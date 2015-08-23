@@ -34,6 +34,10 @@
   <string name="setting_confirmation_always">Always</string>
   <string name="setting_confirmation_just_once">Just once</string>
   <string name="setting_confirmation_never">Never</string>
+  <string name="immersive_mode_confirmation_title">Immersive Mode Confirmation</string>
+  <string name="immersive_mode_confirmation_message">Would you like to enable the immersive mode confirmation dialog?</string>
+  <string name="safe_headset_warning_title">Safe Headset Volume</string>
+  <string name="safe_headset_warning_message">Would you like to disable the recommended volume level warning ?</string>
   <string name="android_installing_apk">Alkalmazás telepítése
         <xliff:g id="number" example="123">%1$d</xliff:g> /
         <xliff:g id="number" example="123">%2$d</xliff:g>.</string>

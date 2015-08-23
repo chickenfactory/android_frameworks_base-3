@@ -40,4 +40,6 @@
   <string name="quick_settings_quick_pull_down_message">Would you like the edge of the status bar to pull down quick settings?</string>
   <string name="heads_up_snooze_message">Heads up is uitgeschakeld voor <xliff:g id="number">%d</xliff:g> minuten.</string>
   <string name="screen_pinning_description_no_navbar">Dit houdt het in beeld totdat je het losmaakt. Druk en houdt de Terug knop ingedrukt om los te maken.</string>
+  <string name="battery_saver_dismiss_title">Dismiss</string>
+  <string name="battery_saver_notification_action_text_short">Turn off</string>
 </resources>
